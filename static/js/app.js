@@ -148,6 +148,5 @@ function buildCharts(sample) {
     Plotly.newPlot("gauge", [gaugeData], gaugeLayout);
 
   });
- };
-
-// ....................plot.ly challenge Solomon Rotich June 2022.....................................//
+ }
+// ....................plot.ly challenge Farai Maramba June 2022.....................................//
