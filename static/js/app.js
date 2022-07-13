@@ -16,7 +16,7 @@ function init() {
       buildMetadata(selected_Sample);
     });
   }
-//  Enable an option to pull unique data with new selection //
+//  Enable an option to pull unique data with new selections //
 init();
 
 function optionChanged(selected) {
@@ -26,7 +26,7 @@ function optionChanged(selected) {
 }
 //----------- Demographics Panel--------------//
 //  Display the sample metadata, i.e., an individual's demographic information
-// Display each key-value pair from the metadata JSON object 
+// Display each key-value pair from the metadata JSON objects 
  // Filter the data for the object with the desired unique sample id.
  // then enable the selected pull the meta_panel with id of `#sample-metadata` 
 function buildMetadata(sample) {
@@ -40,7 +40,7 @@ function buildMetadata(sample) {
     // by reseting any existing metadata
     meta_panel.html("");
 
-    // Use `Object.entries` to add each key and value pair to the panel
+    // Use `Object.entries` to add each keys and values pair to the panel
 
     Object.entries(result).forEach(([key, value]) => {
         meta_panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
